@@ -46,7 +46,7 @@ console.groupCollapsed('Task 1.2');
     console.table(teenageWomenFullnames);
 
     function getTeenageWomenFullnames(user) {
-        if (!user.isMale && (user.age >= 6 && user.age <= 18)) {
+        if (!user.isMale && user.age >= 6 && user.age <= 18) {
             return user.getFullName();
         };
     };
